@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&D</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/image/Main_block/icons.svg" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="header_menu container animate-on-scroll">
+            <div class="header_image slider">
+                <!-- Картинки -->
+                <img src="assets/image/Main_block/1.svg" alt="Image 1" class="slider-image" data-index="0">
+                <img src="assets/image/Main_block/2.svg" alt="Image 2" class="slider-image" data-index="1">
+                <img src="assets/image/Main_block/3.svg" alt="Image 3" class="slider-image" data-index="2">
+            </div>
+            <div class="header_txt">
+                <img src="assets/image/Main_block/Main_txt.svg" alt="#">
+            </div>
+        </div>
+
+    </header>
+
+    <!-- пятница -->
+
+    <!-- August start -->
+    <div class="August container my-60 animate-on-scroll">
+        <div class="August_txt">
+            <h2>Дорогие родные и друзья</h2>
+            <p>Мы хотим разделить с вами незабываемы для нас день и пригласить на нашу тсвадьбу</p>
+        </div>
+        <div class="August_img">
+            <img src="assets/image/August/August.svg" alt="#">
+        </div>
+    </div>
+    <!-- August end -->
+
+    <!-- img start -->
+    <div class="imgess container2 animate-on-scroll">
+        <img src="assets/image/image/1.png" alt="#">
+    </div>
+    <!-- img end -->
+
+    <!-- Timing start -->
+    <div class="Timings container my-60 animate-on-scroll">
+        <div class="title">
+            <h2>
+                Тайминг
+            </h2>
+        </div>
+        <div class="ttitt">
+            <div class="Timing">
+                <div class="Timing_img">
+                    <img src="assets/image/Timing/1.png" alt="!">
+                </div>
+
+                <div class="Timing_txt">
+                    <p>13:20 - торжественная церемония </p>
+                </div>
+            </div>
+
+            <div class="Timing">
+                <div class="Timing_img">
+                    <img src="assets/image/Timing/2.png" alt="!">
+                </div>
+
+                <div class="Timing_txt">
+                    <p>14:20 - венчание <span>(время может изменится)</span></p>
+                </div>
+            </div>
+
+            <div class="Timing">
+                <div class="Timing_img">
+                    <img src="assets/image/Timing/3.png" alt="!">
+                </div>
+
+                <div class="Timing_txt">
+                    <p>17:30 - начало банкета </p>
+                </div>
+            </div>
+
+            <div class="Timing">
+                <div class="Timing_img">
+                    <img src="assets/image/Timing/4.png" alt="!">
+                </div>
+
+                <div class="Timing_txt">
+                    <p>00:00 - завершение вечера </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Timing end -->
+
+    <!-- Dress_code start -->
+    <div class="Dress_code_start container2 animate-on-scroll">
+        <div class="dress_border1">
+            <img src="assets/image/Dress_code/1.svg" alt="#">
+        </div>
+        <div class="dress_code container">
+            <div class="title">
+                <h2>
+                    Дресс-код
+                </h2>
+            </div>
+            <div class="dress">
+                <p>Дресс-код мероприятия — Festive attire. Это значит, что одежда должна быть праздничной, аккуратной и
+                    соответствовать торжественной атмосфере события. Каждый гость может подчеркнуть свой стиль и вкус,
+                    главное — сохранить гармонию с общей обстановкой.
+                    Важно: Белый цвет в женских нарядах запрещается.</p>
+            </div>
+        </div>
+        <div class="dress_border2 container2">
+            <img src="assets/image/Dress_code/2.svg" alt="#">
+        </div>
+    </div>
+    <!-- Dress_code end -->
+
+    <!-- wishes start -->
+    <div class="wishess container my-60 animate-on-scroll">
+        <!-- Слайдер -->
+        <div class="slider">
+            <!-- Слайды -->
+            <div class="wishes slide active">
+                <div class="image-container">
+                    <img src="assets/image/wishes/1.svg" alt="#">
+                    <p>Будем очень признательны, если Вы воздержитесь от криков «Горько». Ведь поцелуй - это знак
+                        выражения чувств, и он не может быть по заказу</p>
+                </div>
+            </div>
+
+            <div class="wishes slide">
+                <div class="image-container">
+                    <img src="assets/image/wishes/1.svg" alt="#">
+                    <p>Мы открыли группу в telegram для всех гостей. Давайте добавлять в нее свадебные видеоролики и
+                        фотографии. А позже мы поделимся с вами кадрами со свадьбы, сделанными профессиональным
+                        фотографом</p>
+                </div>
+            </div>
+
+            <div class="wishes slide">
+                <div class="image-container">
+                    <img src="assets/image/wishes/1.svg" alt="#">
+                    <p>Оставьте свои пожелания в нашей 'Книге пожеланий' — она сохранит для нас ваши теплые слова,
+                        которые мы будем перечитывать с любовью спустя годы. Ваше внимание — наш бесценный подарок</p>
+                </div>
+            </div>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const slides = document.querySelectorAll(".slide");
+                let currentIndex = 0;
+
+                function showSlide(index) {
+                    slides.forEach((slide, i) => {
+                        if (i === index) {
+                            slide.classList.add("active");
+                        } else {
+                            slide.classList.remove("active");
+                        }
+                    });
+                }
+
+                function nextSlide() {
+                    currentIndex = (currentIndex + 1) % slides.length;
+                    showSlide(currentIndex);
+                }
+
+                function prevSlide() {
+                    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+                    showSlide(currentIndex);
+                }
+
+                setInterval(nextSlide, 10000);
+
+                showSlide(currentIndex);
+
+                let startX = 0;
+                let isSwiping = false;
+
+                const slider = document.querySelector(".slider");
+
+                slider.addEventListener("touchstart", (e) => {
+                    startX = e.touches[0].clientX;
+                    isSwiping = true;
+                });
+
+                slider.addEventListener("touchmove", (e) => {
+                    if (!isSwiping) return;
+
+                    const currentX = e.touches[0].clientX;
+                    const deltaX = currentX - startX;
+
+                    if (Math.abs(deltaX) > 50) {
+                        isSwiping = false;
+
+                        if (deltaX > 0) {
+                            prevSlide();
+                        } else {
+                            nextSlide();
+                        }
+                    }
+                });
+
+                slider.addEventListener("touchend", () => {
+                    isSwiping = false;
+                });
+            });
+        </script>
+    </div>
+
+    <!-- wishes end -->
+
+    <!-- podt start -->
+    <div class="podt container my-60 ">
+        <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdb7Pz6smoBUsLF05piBkUQGeiSh1-H-HouL-j9vZ-AEBjjuw/viewform?usp=header"><img
+                src="assets/image/wishes/btn.svg" alt="#"></a>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const blocks = document.querySelectorAll(".animate-on-scroll");
+
+            // Функция для проверки видимости блоков
+            function checkVisibility() {
+                blocks.forEach((block) => {
+                    const blockTop = block.getBoundingClientRect().top; // Расстояние от верха блока до видимой области
+                    const windowHeight = window.innerHeight; // Высота видимой области экрана
+
+                    // Если блок попадает в видимую область (80% высоты экрана)
+                    if (blockTop < windowHeight * 0.8) {
+                        block.classList.add("active"); // Добавляем класс active
+                    }
+                });
+            }
+
+            // Проверяем видимость при загрузке страницы
+            checkVisibility();
+
+            // Проверяем видимость при прокрутке
+            window.addEventListener("scroll", checkVisibility);
+        });
+    </script>
+    <!-- podt end -->
+</body>
+
+</html>

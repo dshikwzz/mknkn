@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: "Montserrat-R";
+    color: #000000;
+}
+
+body {
+    background-color: #EDE8D0;
+}
+
+@font-face {
+    font-family: "Montserrat-M";
+    src: url(../fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat-R";
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat-S";
+    src: url(../fonts/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat-B";
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat-ExtraLight";
+    src: url(../fonts/Montserrat-ExtraLight.ttf);
+}
+
+.container {
+    width: 310px;
+    margin: 0 auto;
+}
+
+.my-60 {
+    display: flex;
+    margin-top: 150px;
+}
+
+/* main start */
+.header_menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.header_image {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+}
+
+/* main end */
+
+/* August start */
+.August {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.August_txt {
+    text-align: center;
+}
+
+.August_txt h2 {
+    font-size: 25px;
+    width: 304px;
+    margin-bottom: 7px;
+}
+
+.container2 {
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.August_txt p {
+    font-size: 10px;
+    width: 310px;
+    margin-bottom: 17px;
+}
+
+/* August end */
+
+/* Timing start */
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 304px;
+}
+
+.Timings {
+    flex-direction: column;
+}
+
+.title h2 {
+    font-size: 25px;
+    padding-bottom: 38px;
+}
+
+.ttitt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.Timing_txt P {
+    font-size: 17px;
+    width: 201px;
+}
+
+.Timing {
+    display: flex;
+    gap: 19px;
+    align-items: center;
+    justify-content: center;
+}
+/* Timing end */
+
+/* Dress_code start */
+.dress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dress p {
+    font-size: 17px;
+    width: 292px;
+}
+
+.dress_border1 {
+    margin-bottom: 15px;
+}
+
+.dress_border2 {
+    margin-top: 15px;
+}
+/* Dress_code end */
+
+/* wishes start */
+.wishess {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Стили для контейнера */
+.image-container {
+    position: relative; 
+    display: inline-block; 
+}
+
+.image-container p {
+    font-size: 12px;
+    width: 234px;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+    box-sizing: border-box; 
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.slide {
+    display: none; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.slide.active {
+    display: block; 
+}
+
+.podt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 240px;
+}
+
+.Timing_txt span{
+    font-size: 10px;
+}
+
+/* wishes end */
+
+/* Общие анимации */
+/* Общая анимация */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Смещение вниз */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Возвращение в исходное положение */
+    }
+}
+
+/* Начальное состояние блоков */
+.animate-on-scroll {
+    opacity: 0; /* Блоки скрыты по умолчанию */
+    transform: translateY(20px); /* Смещены вниз */
+    transition: opacity 0.8s ease, transform 0.8s ease; /* Плавный переход */
+}
+
+/* Активное состояние блоков */
+.animate-on-scroll.active {
+    opacity: 1; /* Блок становится видимым */
+    transform: translateY(0); /* Возвращается в исходное положение */
+}
